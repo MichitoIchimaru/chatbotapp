@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../components/monthly_target_card.dart';
+import '../components/information_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -7,9 +7,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SizedBox.expand(
-        child: const Column(children: [MonthlyTargetCard()]),
-      ),
+      body: SizedBox.expand(child: const Column(children: [InformationCard()])),
       backgroundColor: Colors.grey,
     );
   }

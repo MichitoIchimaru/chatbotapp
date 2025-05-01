@@ -12,5 +12,9 @@ flutter pub get
 flutter run
 ※chromeを選択
 ```
+androidフォルダでエラーが出る場合はandroidフォルダで下記を実施
+```
+gradle wrapper
+```
 
 ![画面](./docs/images/screen01.png)
