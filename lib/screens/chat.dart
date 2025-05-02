@@ -29,8 +29,12 @@ class ChatScreenState extends State<ChatScreen> {
         conversationId,
       );
       _generateBotReply(answer['answer']);
-      messageId = answer['message_id'];
-      conversationId = answer['conversation_id'];
+      if (answer['message_id'] != null) {
+        messageId = answer['message_id'];
+      }
+      if (answer['conversation_id'] != null) {
+        conversationId = answer['conversation_id'];
+      }
     }
   }
 
